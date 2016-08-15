@@ -37,7 +37,7 @@ fn main() {
 
     println!("cargo:rustc-link-search={}", output.join("opt/OpenBLAS/lib").display());
     println!("cargo:rustc-link-lib={}=openblas", kind);
-    println!("cargo:rustc-link-lib=dylib=gfortran");
+    println!("cargo:rustc-link-lib=gfortran");
 }
 
 fn run(command: &mut Command) {
